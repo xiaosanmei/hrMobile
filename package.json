@@ -1,0 +1,31 @@
+{
+	"name": "hrmobile",
+	"version": "1.0.0",
+	"author": "niedongsheng <niedongsheng@doctorwork.com>",
+	"scripts": {
+        "dev": "blade dev",
+        
+        "build": "blade build"
+	},
+	"prettier": {
+		"tabWidth": 4,
+		"useTabs": true,
+		"singleQuote": false
+    },
+    "pre-push": {
+		"run": "test"
+	},
+	"babel": {
+		"env": {
+			"test": {
+				"presets": ["env"]
+			}
+		},
+		"presets": ["env"]
+	},
+	"dependencies": {
+		"blade-scripts": "^1.2.0"
+	},
+	"devDependencies": {
+    }
+}
